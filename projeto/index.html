@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILOVEPENHADF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Penha PDF</h1>
+    
+    <div class="drop-zone" id="pdfDropZone">Clique aqui e selecione sua Guia de Encaminhamento</div>
+    <input type="file" id="pdfInput" accept="application/pdf" style="display:none;">
+    
+    
+    <canvas id="pdfCanvas"></canvas>
+    
+    <div class="drop-zone" id="imageDropZone1">Clique aqui e selecione sua assinatura</div>
+    <input type="file" id="imageInput1" accept="image/*" style="display:none;">
+    
+    
+    <input type="text" id="filename" placeholder="Digite o Nome do Arquivo" style="margin-bottom: 10px; padding: 10px; border-radius: 5px; border: none; width: 80%; max-width: 300px;">
+    <button id="exportButton">Exportar PDF</button>
+    
+   <script src="script.js"></script>
+</body>
+</html>
